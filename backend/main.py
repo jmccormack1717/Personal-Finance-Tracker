@@ -13,7 +13,7 @@ app = FastAPI()
 # --- CORS ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Replace with your frontend URL in production
+    allow_origins=["https://personal-finance-tracker-lxok.onrender.com"],  # Replace with your frontend URL in production
     allow_methods=["*"],
     allow_headers=["*"],
 )
