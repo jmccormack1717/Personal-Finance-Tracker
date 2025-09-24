@@ -29,7 +29,6 @@ function App() {
     if (!description || !amount) return;
 
     if (editingId) {
-      // For simplicity, we delete and re-add as backend doesn't have update yet
       await axios.delete(`${API_URL}/transactions/${editingId}`);
       setEditingId(null);
     }
